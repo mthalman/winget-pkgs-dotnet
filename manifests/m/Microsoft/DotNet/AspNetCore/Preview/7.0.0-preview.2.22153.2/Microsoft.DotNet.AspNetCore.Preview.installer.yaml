@@ -1,0 +1,20 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.1.0.schema.json
+
+PackageIdentifier: Microsoft.DotNet.AspNetCore.Preview
+PackageVersion: 7.0.0-preview.2.22153.2
+MinimumOSVersion: 6.1.7601
+InstallerSwitches:
+  Silent: /quiet
+  SilentWithProgress: /passive
+Installers:
+- Architecture: x64
+  InstallerType: burn
+  InstallerUrl: https://dotnetcli.azureedge.net/dotnet/aspnetcore/Runtime/7.0.0-preview.2.22153.2/aspnetcore-runtime-7.0.0-preview.2.22153.2-win-x64.exe
+  InstallerSha256: 5A1D7B457155A0C4B49491D6A2177A83633360F9972C56C60EB07A318D8BE809
+- Architecture: x86
+  InstallerType: burn
+  InstallerUrl: https://dotnetcli.azureedge.net/dotnet/aspnetcore/Runtime/7.0.0-preview.2.22153.2/aspnetcore-runtime-7.0.0-preview.2.22153.2-win-x86.exe
+  InstallerSha256: 37F11DDB58CDCAFA1105315EEC6B3BF8ADA398929AC4F53E91B92CA13475B8DB
+ManifestType: installer
+ManifestVersion: 1.1.0
+

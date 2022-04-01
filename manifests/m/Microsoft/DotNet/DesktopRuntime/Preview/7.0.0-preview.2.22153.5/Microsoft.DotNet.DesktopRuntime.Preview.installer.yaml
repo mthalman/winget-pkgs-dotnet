@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.1.0.schema.json
+
+PackageIdentifier: Microsoft.DotNet.DesktopRuntime.Preview
+PackageVersion: 7.0.0-preview.2.22153.5
+MinimumOSVersion: 6.1.7601
+InstallerSwitches:
+  Silent: /quiet
+  SilentWithProgress: /passive
+Installers:
+- Architecture: arm64
+  InstallerType: burn
+  InstallerUrl: https://dotnetcli.azureedge.net/dotnet/WindowsDesktop/7.0.0-preview.2.22153.5/windowsdesktop-runtime-7.0.0-preview.2.22153.5-win-arm64.exe
+  InstallerSha256: D6B73724DFF32DD05BD320D9C159A8ACEE0DEFB322756CCFEFCE388795F0F526
+- Architecture: x64
+  InstallerType: burn
+  InstallerUrl: https://dotnetcli.azureedge.net/dotnet/WindowsDesktop/7.0.0-preview.2.22153.5/windowsdesktop-runtime-7.0.0-preview.2.22153.5-win-x64.exe
+  InstallerSha256: 01A409D7F198B1EBF5882CCFFC9F81A0EBF956E47545D9D4CD0A68D87C5A3302
+- Architecture: x86
+  InstallerType: burn
+  InstallerUrl: https://dotnetcli.azureedge.net/dotnet/WindowsDesktop/7.0.0-preview.2.22153.5/windowsdesktop-runtime-7.0.0-preview.2.22153.5-win-x86.exe
+  InstallerSha256: D62ABA21B815B2F773DE13C310B4B69AFCA8D8ADDCF55CC321BF757D8BCB3C90
+ManifestType: installer
+ManifestVersion: 1.1.0
+
