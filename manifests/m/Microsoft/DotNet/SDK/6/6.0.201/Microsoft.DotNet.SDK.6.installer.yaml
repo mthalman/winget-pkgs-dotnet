@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.1.0.schema.json
+
+PackageIdentifier: Microsoft.DotNet.SDK.6
+PackageVersion: 6.0.201
+MinimumOSVersion: 6.1.7601
+InstallerSwitches:
+  Silent: /quiet
+  SilentWithProgress: /passive
+Installers:
+- Architecture: arm64
+  InstallerType: burn
+  InstallerUrl: https://dotnetcli.azureedge.net/dotnet/Sdk/6.0.201/dotnet-sdk-6.0.201-win-arm64.exe
+  InstallerSha256: BC08B250593F4C16DDF839485BAB68C794BD7784E54EFD8CD63C893A6E5D3979
+- Architecture: x64
+  InstallerType: burn
+  InstallerUrl: https://dotnetcli.azureedge.net/dotnet/Sdk/6.0.201/dotnet-sdk-6.0.201-win-x64.exe
+  InstallerSha256: 8FE7F77734C81650E2A96D99E2FF24948D2B8B0610ACF106470D251941F902DB
+- Architecture: x86
+  InstallerType: burn
+  InstallerUrl: https://dotnetcli.azureedge.net/dotnet/Sdk/6.0.201/dotnet-sdk-6.0.201-win-x86.exe
+  InstallerSha256: D661714A78ED781312484B717343AA91B3461509A5D7E46A2F04A0E59149DC07
+ManifestType: installer
+ManifestVersion: 1.1.0
+

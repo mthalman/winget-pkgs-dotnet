@@ -1,4 +1,3 @@
-# Created using wingetcreate 0.5.0.1
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.1.0.schema.json
 
 PackageIdentifier: Microsoft.DotNet.AspNetCore.6
@@ -10,11 +9,11 @@ InstallerSwitches:
 Installers:
 - Architecture: x64
   InstallerType: burn
-  InstallerUrl: https://dotnetcli.blob.core.windows.net/dotnet/aspnetcore/Runtime/6.0.3/aspnetcore-runtime-6.0.3-win-x64.exe
+  InstallerUrl: https://dotnetcli.azureedge.net/dotnet/aspnetcore/Runtime/6.0.3/aspnetcore-runtime-6.0.3-win-x64.exe
   InstallerSha256: 2824F8AB6EA1DF91083013968DDB13E6EEC38B109543FD54491BB8A79997BB4F
 - Architecture: x86
   InstallerType: burn
-  InstallerUrl: https://dotnetcli.blob.core.windows.net/dotnet/aspnetcore/Runtime/6.0.3/aspnetcore-runtime-6.0.3-win-x86.exe
+  InstallerUrl: https://dotnetcli.azureedge.net/dotnet/aspnetcore/Runtime/6.0.3/aspnetcore-runtime-6.0.3-win-x86.exe
   InstallerSha256: 23DDB9FA5CD525EFB433F3FAA46BFD32D973C39826FEC41A20F226494DC780A2
 ManifestType: installer
 ManifestVersion: 1.1.0
